@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="text.css">
+    <title>Login & Registeration</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Dino Espresso</h2>
+        <nav class="navigation">
+            <button class="login">Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="../AfterLoginSignup/home.html" class="sign-in-form" id="loginForm">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" id="username1" autocomplete="off" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-box">
+                    
+                    <input type="password" id="PasswordField" autocomplete="off" required>
+                    <label for="">Password</label>
+                    <span class="toggle-icon" id="toggleIcon">
+                        <i class="fas fa-eye-slash" id="ShowIcon"></i>
+                        <i class="fas fa-eye" id="HideIcon"></i>
+                    </span>
+                </div>
+                
+                <input type="submit" value="Login" class="btn">
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#loginForm" class="sign-up-form" id="registrationForm">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" id="username" autocomplete="off" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" id="email" autocomplete="off" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    
+                    <input type="password" id="passwordField" autocomplete="off" required>
+                    <label for="">Password</label>
+                    <span class="toggle-icon" id="toggleIcon">
+                        <i class="fas fa-eye-slash" id="showIcon"></i>
+                        <i class="fas fa-eye" id="hideIcon"></i>
+                    </span>
+                </div>
+                
+                
+                <input type="submit" value="Register" class="btn">
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="text.js"></script>
+</body>
+</html>

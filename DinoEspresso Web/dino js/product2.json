@@ -1,0 +1,99 @@
+[
+    {
+        "id":1,
+        "name":"Coffee",
+        "price":12000,
+        "image":"DinoEspresso Web/dino img/pg-1.jpg"
+    },
+    {
+        "id":2,
+        "name":"Product name 2",
+        "price":12000,
+        "image":"DinoEspresso Web/dino img/pg-2.jpg"
+    },
+    {
+        "id":3,
+        "name":"Product name 3",
+        "price":12000,
+        "image":"DinoEspresso Web/dino img/pg-3.jpg"
+    },
+    {
+        "id":4,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"DinoEspresso Web/dino img/pg-4.jpg"
+    },
+    {
+        "id":5,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"DinoEspresso Web/dino img/pg-5.jpg"
+    },
+    {
+        "id":6,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"DinoEspresso Web/dino img/pg-6.jpg"
+    },
+    {
+        "id":7,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"DinoEspresso Web/dino img/pg-7.jpg"
+    },
+    {
+        "id":8,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"DinoEspresso Web/dino img/pg-8.jpg"
+    },
+    {
+        "id":9,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"images/espresso.png"
+    },
+    {
+        "id":10,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"images/tea-cup.png"
+    },
+    {
+        "id":11,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"images/ice-coffee.png"
+    },
+    {
+        "id":12,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"images/irish-coffee.png"
+    },
+    {
+        "id":13,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"images/cappuccino.png"
+    },
+    {
+        "id":14,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"images/frappe.png"
+    },
+    {
+        "id":15,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"images/smoothie.png"
+    },
+    {
+        "id":16,
+        "name":"Product name 1",
+        "price":12000,
+        "image":"images/mocha.png"
+    }
+
+]

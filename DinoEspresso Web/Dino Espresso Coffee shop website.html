@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino Espresso</title>
+    <!-- add icon link -->
+    <link
+      rel="icon"
+      href="./dino img/Web capture_6-8-2023_142615_looka.com.jpeg"
+      type="image/x-icon"
+    />
+    <!-- font awsome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header section starts -->
+    <img class="logom" src="./dino img/logo.png - Copy.png" />
+    <header class="header">
+      <nav class="navbar">
+        <div id="close" class="fas fa-times"></div>
+
+        <a onclick="m();" href="#home" class="nav_item">Home</a>
+        <a onclick="mm();" href="./public/index.html" class="nav_item">Product</a>
+        <a onclick="mmm();" href="./Product.html" class="nav_item">Menu</a>
+        <a onclick="mmmm();" href="#aboutus" class="nav_item">Tab-Reserv & About Us</a>
+        <a onclick="mmmmm();"href="#contact" class="nav_item">Contact</a>
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+      </nav>
+
+      <!-- <div class="containerr">
+        <header> 
+        <div class="shopping">
+            <img src="images/shopcart.svg" >
+            <span class="totalQuantity">0</span>
+          </div>
+       </header>
+      <div class="listProduct"></div>
+    </div> -->
+      
+
+      <div id="menu" class="fas fa-bars"></div>
+    </header>
+    <!-- <div class="card-bod">
+
+  
+    <div class="cart">
+      <h1>CART</h1>
+      <div class="listCart">
+         <div class="item">
+           <img src="images/produ-1.jpeg">
+           <div class="content">
+             <div class="name">Product Name</div>
+             <div class="price">12000 MMK</div>
+           </div>
+           <div class="quantity">
+              <button>-</button>
+              <span class="value">3</span>
+              <button>+</button>
+           </div>
+         </div>
+      </div>
+      <div class="buttons">
+        <div class="close">CLOSE</div>
+        <div class="checkout">
+          <a href="checkout.html">CHECK OUT</a>
+        </div>
+      </div>
+    </div> 
+  </div>-->
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h1 class="title"><span> rise</span> & <span> sip</span></h1>
+        <p class="description">
+          " It's just not coffee , It's Lifestyle flows like blood in our veins.
+          "
+        </p>
+        <p id="ere">Opening Hour [ 8:00 AM ~ 9:00 PM ] </p>
+        
+        <br />
+        <!-- <a onclick="mm();" href="#product" class="btn">get started</a> -->
+      </div>
+
+      <div class="image">
+        <img src="./dino img/home.png" data-speed="-3" class="mover" />
+      </div>
+
+      <a id="scroll-btn"></a>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- Product section starts -->
+
+    <!-- <section class="product" id="product">
+      <h1 id="xcc">Recommended <span>Products</span> From <span>Us</span></h1>
+
+      <div class="slider">
+        <div class="slide-images">
+          <input type="radio" name="slide" id="img1" checked />
+          <input type="radio" name="slide" id="img2" />
+          <input type="radio" name="slide" id="img3" />
+          
+            <img src="images/image-01.jpg " class="m1" alt="img1" />
+            
+
+            <img src=" images/image-02.jpg" class="m2" alt="img2" />
+            
+
+            <img src=" images/image-03.jpg" class="m3" alt="img3" />
+            
+
+        </div>
+        <div class="dots">
+          <label for="img1"></label>
+          <label for="img2"></label>
+          <label for="img3"></label>
+          <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        </div>
+      </div>
+      <div id="arrow">
+        <h1 id="arrow-label">
+          Click the dots to see products
+          <lord-icon
+            src="https://cdn.lordicon.com/zmkotitn.json"
+            trigger="loop"
+            delay="100"
+            colors="primary:#ffffff"
+            style="width: 40px; height: 40px"
+            id="arrowm"
+          >
+          </lord-icon>
+        </h1>
+      </div>
+       
+      <div class="avsd">
+        <div>
+          <img id="oop" src="images/produ-1.jpeg">
+          <button id="btnio">12000-MMK<br>[ Add to Cart ]</button>
+        </div>
+        <div>  
+          <img id="oop" src="images/produ-2.jpeg">
+          <button id="btnio">9500-MMK<br>[ Add to Cart ]</button>
+        </div>
+        <div> 
+          <img id="oop" src="images/produ-7.jpeg">
+          <button id="btnio">11500-MMK<br>[ Add to Cart ]</button>
+        </div>
+      </div>
+
+      <div class="avsd2">   
+        <div> 
+          <img id="oop2" src="images/produ-4.jpeg">
+          <button id="btnio">8500-MMK<br>[ Add to Cart ]</button>
+        </div>
+        <div>
+          <img id="oop2" src="images/produ-5.jpeg">
+          <button id="btnio">11500-MMK<br>[ Add to Cart ]</button>
+        </div>
+        <div>
+          <img id="oop2" src="images/produ-6.jpeg">
+          <button id="btnio">10000-MMK<br>[ Add to Cart ]</button>
+        </div>
+      </div>
+
+
+      <div class="box2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+
+  
+
+    </section> -->
+
+    <!-- Product section ends -->
+
+    <!-- Menu section starts -->
+<!-- 
+    <section class="menuf" id="menuf">
+
+      <h1 id="mana"><span>Dino </span>Espresso's<span> Menu</span></h1>
+      
+
+      <div class="mana-co1">
+      <div id="qq1"><img src="images/americano.png" height="100px" weight="100px"> <p id="mana-info"> ----- Americano <span id="avv">[ 3500mmk ]</span></p><button id="kll">Add to cart</button></div>
+      <div id="qq2"><img src= "images/latte-macchiato.png" height="100px" weight="100px"><p id="mana-info">----- Latte <span id="avv">[ 3700mmk ]</span></p><button id="kll">Add to cart</button></div>
+      <div id="qq3"><img src="images/espresso.png" height="100px" weight="100px"><p id="mana-info"> ----- Espresso <span id="avv">[ 3200mmk ]</span></p><button id="kll">Add to cart</button></div>
+      <div id="qq4"><img src="images/tea-cup.png" height="100px" weight="100px"><p id="mana-info"> ----- Tea <span id="avv">[ 2000mmk ]</span></p><button id="kll">Add to cart</button></div>
+      <div id="qq5"><img src="images/ice-coffee.png" height="100px" weight="100px"><p id="mana-info"> ----- Iced Coffee <span id="avv">[ 2500mmk ]</span></p><button id="kll">Add to cart</button></div>
+      </div>
+      <div class="mana-co2">
+      <div id="qq6"><button id="kll">Add to cart</button><p id="mana-info"><span id="avv">[ 4000mmk ] </span>Irish Coffee ----- </p><img src="images/irish-coffee.png" height="100px" weight="100px"></div>
+      <div id="qq7"><button id="kll">Add to cart</button><p id="mana-info"><span id="avv">[ 3500mmk ] </span>Cuppuccino ----- </p>  <img src="images/cappuccino.png" height="100px" weight="100px"></div>
+      <div id="qq8"><button id="kll">Add to cart</button><p id="mana-info"><span id="avv">[ 3700mmk ] </span>Frappe ----- </p>      <img src= "images/frappe.png" height="100px" weight="100px"></div>
+      <div id="qq9"><button id="kll">Add to cart</button><p id="mana-info"><span id="avv">[ 3000mmk ] </span>Smoothie ----- </p>    <img src="images/smoothie.png"  height="100px" weight="100px"></div>
+      <div id="qq10"><button id="kll">Add to cart</button><p id="mana-info"><span id="avv">[ 3500mmk ] </span>Mocha ----- </p>      <img src="images/mocha.png"  height="100px" weight="100px"></div>
+      </div>
+
+
+      
+
+      <div class="box3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section> -->
+
+    <!--Menu section ends-->
+  
+      
+    <!--About us section starts-->
+
+    <secton class="aboutus" id="aboutus">
+        
+        <h2 id="bruh"><span>An</span> Interesting Story <span>About Us</span> </h2>
+        <div class="stre">
+        <h3 id="bkb">Background</h3><br>
+
+        <p id="story">Dino Espresso is a chained premium coffee shop.<br><br>
+          It supplies quality products and provide excellent service to its customers, and is steered by dedicated team to continuously achieve the organizational Vision and Mission.
+        </p><br><br><br>
+
+        <h3 id="bkb">Vision</h3><br>
+        <p id="story">To position ourselves as a premier coffee shop chain with a global presence</p><br><br><br>
+
+        <h3 id="bkb">Mission</h3><br>
+        <p id="story">To continuously grow through innovation and dedication to excellence. Dino Espersso is committed to always deliver a premium cafe experience.</p>
+       </div>
+        <img id="bro" src="./dino img/Coffee shop-bro.png" height="400px" width="400px">
+
+
+        <h1 id="monoco">Book a table</h1>
+        <div id="container">
+        <form id="alll">
+        <div id="n1">
+          &nbsp;&nbsp;&nbsp;No of Guests:
+          <select value="no">
+          <option value="no1"> 1</option>
+          <option value="no1"> 2</option>
+          <option value="no1"> 3</option>
+          <option value="no1"> 4</option>
+          <option value="no1"> 6</option>
+          <option value="no1"> 8</option>
+          <option value="no1"> 10</option></select>
+          <select value="Select Hour">
+          <option value="no1">8:00  am</option>
+          <option value="no1">9:00  am</option>
+          <option value="no1">10:00 am</option>
+          <option value="no1">11:00 am</option>  
+          <option value="no1">12:00 am</option>
+          <option value="no1">1:00  pm</option>
+          <option value="no1">2:00  pm</option>
+          <option value="no1">3:00  pm</option>
+          <option value="no1">4:00  pm</option>
+          <option value="no1">5:00  pm</option>
+          <option value="no1">6:00  pm</option>  
+          <option value="no1">7:00  pm</option>
+          <option value="no1">8:00  pm</option>
+          <option value="no1">9:00  pm</option>
+        </select>
+        </div>
+        <div id="n2">
+          <input type="text" placeholder=" First Name -" >&nbsp;&nbsp;
+          <input type="text" placeholder=" Last Name -" >
+        </div>
+        <div id="n3">
+          <input type="email" name="email1" id="em1" placeholder=" Email -" required>&nbsp;&nbsp;
+           
+          <input type="date" name="myDate" id="myDate" placeholder="Choose a date">
+          
+        </div>
+        <div id="n4">
+          <input type="tel" name="tel1" id="te1" required placeholder=" Ph no -">
+          <i class='bx bx-mobile'></i>
+          <br><br>
+          <textarea name="area3" id="area1" rows="5" cols="20" placeholder=" Any Special Requests -"></textarea><br>
+          <div id="n6">
+          <input type="submit" value=" RESERVE " id="lll">
+          </div>
+        </div>
+        </form>
+        </div>
+        
+
+
+      <div class="box2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+
+
+
+    </secton>
+
+    <!-- About Us section ends -->
+
+    <!--Contact section starts-->
+    
+    <section class="contact" id="contact">
+
+
+    <h1 id="cvsf">Contact <span>Us</span></h1>
+
+
+    <div class="box3">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47742112.62850609!2d58.29646145!3d43.
+              084603200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1936f625d4ba7%3A0x9676670831769962!2sUniversity%20of%20Information%20Technology(UIT)
+              !5e0!3m2!1sen!2smm!4v1693005837073!5m2!1sen!2smm" width="600" height="450" style="border:0;"
+               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapx"></iframe>
+
+               <div id="numv">
+                    <h2>CONATACT RIGHT NOW</h2>
+                    <ul>
+                      <li><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                        <lord-icon id="mcon"
+                            src="https://cdn.lordicon.com/avkeowsl.json"
+                            trigger="loop"
+                            delay="100"
+                            colors="primary:#f9c9c0,secondary:#ebe6ef"
+                            style="width:50px;height:50px">
+                        </lord-icon><a id="ccf" href="tel:+95 099 60128062 ">+95-09960128062</a></li>
+                      <li><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                        <lord-icon id="mcon"
+                            src="https://cdn.lordicon.com/avkeowsl.json"
+                            trigger="loop"
+                            delay="100"
+                            colors="primary:#f9c9c0,secondary:#ebe6ef"
+                            style="width:50px;height:50px">
+                        </lord-icon><a id="ccf" href="tel:+95 097 2291963 ">+95-09772291963</a></li>
+                      <li><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                        <lord-icon id="mcon"
+                            src="https://cdn.lordicon.com/iepbfivp.json"
+                            trigger="loop"
+                            delay="100"
+                            colors="primary:#121331,secondary:#4bb3fd,tertiary:#ebe6ef"
+                            style="width:50px;height:50px">
+                        </lord-icon><a id="ccf" href="mailto:Dinoespressocafe@gmail.com ">DinoEspressoCafe@gmail.com</a></li>
+                      <li><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                        <lord-icon id="mcon"
+                            src="https://cdn.lordicon.com/oaflahpk.json"
+                            trigger="loop"
+                            delay="100"
+                            colors="primary:#4bb3fd"
+                            style="width:50px;height:50px">
+                        </lord-icon><p id="ccf2">Parami Rd,Hlaing Township,Yangon</p></li>
+                    </ul>
+
+               </div>
+
+
+    
+                <form id="form-mai" action="mailto:Dinoespressocafe@gmail.com">
+
+                  <input type="email" name="email1"  id="mkj" placeholder=" Email -" required ><br>
+                  <textarea name="area" id="area" rows="10" cols="80" placeholder=" Message -"></textarea>
+                  <input type="submit" value=" FEEDBACk " id="mkj2">
+                        
+                </form>
+            
+
+
+  </section>
+    <!--contact section ends-->
+
+    <!--footer section starts-->
+        
+  <footer class="footer">
+
+      <div class="rect"></div>
+       
+      <a href="#home"><img src="./dino img/logo.png - Copy.png" id="carl"></a>
+       
+      <div class="social-med"> 
+      <p>Social Media</p><br>
+      <a href="https://www.facebook.com"><img src="./dino img/facebook (1).png"></a> 
+      <a href="https://www.instagram.com"><img src="./dino img/instagram.png"></a>
+      <a href="https://www.twitter.com"><img src="./dino img/twitter.png"></a>
+      </div>
+
+      <div class="foot">
+        <p>Dino Espresso &copy; 2023 All rights reserved.</p>
+      </div>
+      
+      <div id="foot-s">
+      <p id="foot-title">CONTENT</p>
+      <ul>
+         <li>
+          <a href="#home">HOME</a>
+         </li>
+         <li>
+          <a href="./public/index.html">PRODUCT</a>
+         </li>
+         <li>
+          <a href="./Product.html">SERVICE</a>
+         </li>
+         <li>
+          <a href="#aboutus">TAB RESV & ABOUT US</a>
+         </li>
+         <li>
+          <a href="#contact">CONTACT</a>
+         </li>
+
+      </ul>
+     </div>
+    <div id="numvbb">
+      <p id="foot-title2">CONTACT US</p>
+      <ul>
+        <li><a href="tel:+95 996 012 8062 ">+95-9960128062</a></li>
+        <li><a href="tel:+95 977 229 1963 ">+95-9772291963</a></li>
+        <li><a href="mailto:Dinoespressocafe@gmail.com ">DINOESPRESSOCAFE@GMAIL.COM</a></li>
+        <li><p>PARAMI RD,HLAING TOWNSHIP,YANGON</p></li>
+      </ul>
+
+     </div> 
+      
+  </footer>
+    <!--footer section ends-->
+
+
+    <!-- GSAP CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <!-- Custom js file -->
+    <script src="./dino js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://th.bing.com/th/id/R.d1c2e809e934825ecd3fa9633ce2f27d?rik=HZ%2fb328sCIj9gw&riu=http%3a%2f%2fwallpaperswide.com%2fdownload%2fcoffee_art-wallpaper-4800x1350.jpg&ehk=8w3Op8245VWgFpOisDZJyvaCGFtjImp2%2b47OMfcpzzo%3d&risl=&pid=ImgRaw&r=0");
+    background-position:center;
+    background-size:cover;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+@media (max-width:790px){
+    header nav a {
+        display: none;
+    }
+}
+
+.logo {
+    font-size: 2em;
+    color: #411700;
+    user-select: none;
+}
+
+
+
+.navigation .login {
+    width: 90px;
+    height: 40px;
+    background: transparent;
+    border: 3px solid #411700;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #411700;
+    font-weight: 300;
+    margin-left: 40px;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.navigation .login:hover {
+    background: #fff;
+    color: #000;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(225,225,225,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition:transform .5s ease, height .2s ease;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 480px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translate(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translate(0);
+}
+
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #5a2912;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    caret-color: white;
+    color: white;
+    font-weight: 600px;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 57px;
+}
+
+
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #8b4220;
+    border:none;
+    outline:none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+.infield input:valid~span:not(span.toggle-icon),
+input:focus~span:not(span.toggle-icon) {
+    color: #00dfc4;
+    transform: translateX(300px) translateY(-9px);
+    font-size: 0.8em;
+    padding: 0 10px;
+    background: #e8e9ea;
+    border-left: 1px solid #d4bf8e;
+    border-right: 1px solid #d4bf8e;
+}
+.toggle-icon i {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    margin-left: -26px;
+    margin-top: 20px;
+    user-select: none;
+    font-size: 17px;
+}
+
+#hideIcon,
+#HideIcon {
+    display: none;
+}
